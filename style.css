@@ -44,8 +44,8 @@ a {
   position: relative;
   height: 255px;
   background:
-    linear-gradient(rgba(25, 8, 3, 0.18), rgba(10, 5, 3, 0.45)),
-    url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+    linear-gradient(rgba(20, 8, 3, 0.18), rgba(8, 4, 2, 0.42)),
+    url("assets/images/banner.png") center top / cover no-repeat;
   border-bottom: 2px solid #8d5314;
   overflow: hidden;
 }
@@ -53,7 +53,7 @@ a {
 .banner-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(255, 200, 80, 0.07), rgba(0, 0, 0, 0.18));
+  background: linear-gradient(to bottom, rgba(255, 200, 80, 0.05), rgba(0, 0, 0, 0.20));
 }
 
 .banner-inner {
@@ -62,28 +62,6 @@ a {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
-}
-
-.char {
-  position: absolute;
-  top: 8px;
-  width: 240px;
-  height: 230px;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.95;
-}
-
-.left-char {
-  left: 0;
-  background-image: url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80");
-  clip-path: inset(0 round 6px);
-}
-
-.right-char {
-  right: 0;
-  background-image: url("https://images.unsplash.com/photo-1520034475321-cbe63696469a?auto=format&fit=crop&w=900&q=80");
-  clip-path: inset(0 round 6px);
 }
 
 .banner-center {
@@ -98,14 +76,14 @@ a {
 .banner-center h1 {
   font-size: 36px;
   color: #ffe08a;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
   margin-bottom: 8px;
 }
 
 .banner-center p {
   font-size: 15px;
   color: #f6d69a;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.95);
 }
 
 .layout {
@@ -280,9 +258,7 @@ a {
   width: 420px;
   height: 235px;
   margin: 10px auto 0;
-  background:
-    linear-gradient(rgba(0,0,0,.28), rgba(0,0,0,.28)),
-    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
+  background: #0b0b0b;
   border: 1px solid #814710;
   border-radius: 6px;
   display: flex;
@@ -334,7 +310,6 @@ a {
   font-size: 13px;
 }
 
-/* orta panel düzenleri */
 .page-panel {
   width: 100%;
   min-height: 520px;
@@ -350,18 +325,8 @@ a {
   font-size: 12px;
 }
 
-.panel-text {
-  line-height: 1.7;
-  color: #d7b982;
-  text-align: left;
-}
-
 .panel-space-top {
   margin-top: 18px;
-}
-
-.panel-space-mid {
-  margin-top: 28px;
 }
 
 .panel-center {
