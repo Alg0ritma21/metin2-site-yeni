@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280, initial-scale=0.28, maximum-scale=1.0, user-scalable=yes">
+  <title>Oyuncu Listesi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-wrap">
+    <div class="site-bg">
+
+      <header class="top-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-inner">
+          <div class="char left-char"></div>
+
+          <div class="banner-center">
+            <h1>Oyuncu Listesi</h1>
+            <p>Sunucudaki oyuncuları filtreleyip görüntüle</p>
+          </div>
+
+          <div class="char right-char"></div>
+        </div>
+      </header>
+
+      <main class="layout">
+
+        <aside class="sidebar">
+          <div class="box">
+            <div class="box-title">Hızlı Menü</div>
+            <div class="box-body menu-list">
+              <a href="index.html">Anasayfa</a>
+              <a href="kayit.html">Hesap Oluştur</a>
+              <a href="indir.html">Oyunu İndir</a>
+              <a href="oyuncu-listesi.html">Oyuncu Listesi</a>
+              <a href="lonca-listesi.html">Lonca Listesi</a>
+              <a href="#">Nesne Market</a>
+              <a href="#">Destek Sistemi</a>
+              <a href="#">Forum</a>
+              <a href="#">Facebook</a>
+              <a href="#">Ban Sorgulama</a>
+              <a href="#">Oyun Tanıtımı</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-title">Sıralama</div>
+            <div class="box-body ranking-list">
+              <div class="rank-row"><span>1. Broadway</span><strong>300</strong></div>
+              <div class="rank-row"><span>2. Veysel</span><strong>280</strong></div>
+              <div class="rank-row"><span>3. Savasci</span><strong>250</strong></div>
+              <div class="rank-row"><span>4. NinjaTR</span><strong>220</strong></div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-title">Oyun İstatistikleri</div>
+            <div class="box-body stats-list">
+              <div class="stat-line"><span>Girişler</span><strong>Aktif</strong></div>
+              <div class="stat-line"><span>Kanallar</span><strong>4</strong></div>
+              <div class="stat-line"><span>Online Oyuncu</span><strong>1248</strong></div>
+              <div class="stat-line"><span>Bugün Girenler</span><strong>95</strong></div>
+              <div class="stat-line"><span>Toplam Kayıt</span><strong>5630</strong></div>
+              <div class="stat-line"><span>Toplam Lonca</span><strong>241</strong></div>
+            </div>
+          </div>
+        </aside>
+
+        <section class="content">
+          <div class="main-box">
+            <div class="box-title center-title">Oyuncu Listesi</div>
+
+            <div class="main-box-body page-panel">
+              <div class="panel-inner">
+
+                <form class="panel-form">
+                  <div class="form-group">
+                    <select>
+                      <option>Oyuncu Listesi</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group panel-space-top">
+                    <select>
+                      <option>Tüm Sınıflar</option>
+                      <option>Savaşçı</option>
+                      <option>Ninja</option>
+                      <option>Sura</option>
+                      <option>Şaman</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <input type="text" placeholder="Oyuncu Adı...">
+                  </div>
+
+                  <div class="panel-center">
+                    <button type="button" class="small-btn">Bul</button>
+                  </div>
+                </form>
+
+                <div class="table-wrap">
+                  <table class="classic-table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>İsim</th>
+                        <th>Level</th>
+                        <th>Sınıf</th>
+                        <th>Bayrak</th>
+                        <th>Lonca</th>
+                        <th>Durum</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td class="left">MYKS</td>
+                        <td>75</td>
+                        <td>Savaşçı</td>
+                        <td><span class="flag-box">TR</span></td>
+                        <td>Yok</td>
+                        <td><span class="status-dot"></span></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td class="left">NiqaByte</td>
+                        <td>73</td>
+                        <td>Ninja</td>
+                        <td><span class="flag-box">TR</span></td>
+                        <td>Yok</td>
+                        <td><span class="status-dot"></span></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td class="left">Mesut</td>
+                        <td>48</td>
+                        <td>Sura</td>
+                        <td><span class="flag-box">TR</span></td>
+                        <td>Broadway</td>
+                        <td><span class="status-dot"></span></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td class="left">AdemPortakal</td>
+                        <td>39</td>
+                        <td>Şaman</td>
+                        <td><span class="flag-box">TR</span></td>
+                        <td>Yok</td>
+                        <td><span class="status-dot"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="pagination">
+                  <button type="button" class="small-btn">Önceki</button>
+                  <span class="page-num">1</span>
+                  <button type="button" class="small-btn">Sonraki</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="sidebar">
+          <div class="box">
+            <div class="box-title">Kullanıcı Paneli</div>
+            <div class="box-body login-box">
+              <a href="#" class="login-link">Giriş Yap</a>
+              <input type="text" placeholder="Kullanıcı Adı">
+              <input type="password" placeholder="Parola">
+              <button>Giriş Yap</button>
+
+              <div class="login-help">
+                <a href="#">Kullanıcı adımı unuttum?</a>
+                <a href="#">Parolamı unuttum?</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-title">Sıralama</div>
+            <div class="box-body ranking-list">
+              <div class="rank-row"><span>1. MYKS</span><strong>75</strong></div>
+              <div class="rank-row"><span>2. NiqaByte</span><strong>73</strong></div>
+              <div class="rank-row"><span>3. Mesut</span><strong>48</strong></div>
+              <div class="rank-row"><span>4. AdminPortal</span><strong>39</strong></div>
+            </div>
+          </div>
+        </aside>
+
+      </main>
+
+      <footer class="footer">
+        <p>Copyright © 2027 Metin2 - Tüm hakları saklıdır.</p>
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+</html>
